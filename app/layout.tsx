@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     description: "Transporte acessível com excelência e cuidado humano",
     type: "website",
   },
-  generator: "v0.app",
 }
 
 export default function RootLayout({
