@@ -15,6 +15,7 @@ import {
   Award,
   Star,
   CheckCircle2,
+  MessageCircle,
 } from "lucide-react"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -78,20 +79,10 @@ export default function Home() {
 
             <Button
               asChild
-              size="sm"
-              className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
-                Agende sua viagem
-              </Link>
-            </Button>
-
-            <Button
-              asChild
               className="bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
-                Central de Agendamento
+                Agende sua viagem
               </Link>
             </Button>
           </div>
@@ -143,8 +134,9 @@ export default function Home() {
                 asChild
                 className="bg-[#25D366] text-white hover:bg-[#20BA5A] text-lg px-10 py-8 shadow-2xl hover:shadow-[#25D366]/50 hover:scale-110 transition-all duration-300 font-bold"
               >
-                <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
-                  AGENDE SUA VIAGEM!
+                <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <MessageCircle className="w-6 h-6" />
+                  AGENDE SUA VIAGEM
                 </Link>
               </Button>
             </div>
@@ -157,7 +149,10 @@ export default function Home() {
                   size={150}
                   level="H"
                 />
-                <p className="text-center text-sm text-gray-600 mt-2">Escaneie para agendar</p>
+                <p className="text-center text-sm text-gray-600 mt-2 flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                  Escaneie para agendar
+                </p>
               </div>
             </div>
           </div>
@@ -439,7 +434,10 @@ export default function Home() {
                     size={100}
                     level="H"
                   />
-                  <p className="text-center text-xs text-gray-600 mt-1">Escaneie aqui</p>
+                  <p className="text-center text-xs text-gray-600 mt-1 flex items-center justify-center gap-1">
+                    <MessageCircle className="w-3 h-3 text-[#25D366]" />
+                    Escaneie aqui
+                  </p>
                 </div>
               </div>
             </div>
