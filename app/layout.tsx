@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Há quase 10 anos transformando mobilidade em autonomia. Transporte especializado para cadeirantes em Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré).",
   keywords: "transporte acessível, cadeirantes, mobilidade, Campinas, transporte adaptado, Valinhos, Vinhedo, Jundiaí",
+  icons: {
+    icon: "/logo-mobilicare.png",
+    shortcut: "/logo-mobilicare.png",
+    apple: "/logo-mobilicare.png",
+  },
   openGraph: {
     title: "Mobilycare | Sua Rota de Autonomia",
     description: "Transporte acessível com excelência e cuidado humano em Campinas e Região",
