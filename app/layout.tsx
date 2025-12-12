@@ -10,13 +10,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Mobilicare | Transporte Acessível em Campinas",
+  title: "Mobilycare | Transporte Acessível em Campinas e Região",
   description:
-    "Transporte especializado para cadeirantes com segurança, pontualidade e atendimento humanizado em Campinas. Sua rota de autonomia começa aqui.",
-  keywords: "transporte acessível, cadeirantes, mobilidade, Campinas, transporte adaptado",
+    "Há quase 10 anos transformando mobilidade em autonomia. Transporte especializado para cadeirantes em Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré).",
+  keywords: "transporte acessível, cadeirantes, mobilidade, Campinas, transporte adaptado, Valinhos, Vinhedo, Jundiaí",
   openGraph: {
-    title: "Mobilicare | Sua Rota de Autonomia",
-    description: "Transporte acessível com excelência e cuidado humano",
+    title: "Mobilycare | Sua Rota de Autonomia",
+    description: "Transporte acessível com excelência e cuidado humano em Campinas e Região",
     type: "website",
   },
 }

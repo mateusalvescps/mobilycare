@@ -50,19 +50,16 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-              <Image src="/logo-mobilicare.png" alt="Mobilicare Logo" width={50} height={50} className="w-12 h-12" />
-              <span className="text-2xl font-bold text-primary">Mobilicare</span>
+              <Image src="/logo-mobilicare.png" alt="Mobilycare Logo" width={50} height={50} className="w-12 h-12" />
+              <span className="text-2xl font-bold text-primary">Mobilycare</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-8">
               <Link
-                href="#problema"
+                href="#conheca"
                 className="text-sm font-medium text-foreground hover:text-accent transition-colors"
               >
-                O Problema
-              </Link>
-              <Link href="#sistema" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-                O Sistema
+                Conheça
               </Link>
               <Link
                 href="#servicos"
@@ -88,8 +85,8 @@ export default function Home() {
               asChild
               className="bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
-              <Link href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer">
-                Fale Conosco
+              <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
+                Central de Agendamento
               </Link>
             </Button>
           </div>
@@ -117,7 +114,7 @@ export default function Home() {
               className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed animate-fade-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Transporte acessível com excelência, segurança e cuidado humano em Campinas e região
+              Transporte acessível com excelência, segurança e cuidado humano em Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré)
             </p>
             <div
               className="flex items-center justify-center gap-2 mb-8 animate-fade-in-up"
@@ -125,7 +122,7 @@ export default function Home() {
             >
               <CheckCircle2 className="w-5 h-5 text-[#25D366]" />
               <span className="text-white/90">
-                Veículos adaptados certificados | Motoristas treinados | Disponível 24/7
+                Veículos adaptados certificados | Motoristas treinados | Disponível Todos os dias!
               </span>
             </div>
             <div
@@ -135,37 +132,28 @@ export default function Home() {
               <Button
                 size="lg"
                 asChild
-                className="bg-[#25D366] text-white hover:bg-[#20BA5A] text-lg px-8 py-7 shadow-2xl hover:shadow-[#25D366]/50 hover:scale-110 transition-all duration-300"
+                className="bg-[#25D366] text-white hover:bg-[#20BA5A] text-lg px-10 py-8 shadow-2xl hover:shadow-[#25D366]/50 hover:scale-110 transition-all duration-300 font-bold"
               >
-                <Link href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer">
-                  Agendar Viagem Agora
+                <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
+                  AGENDE SUA VIAGEM!
                 </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="text-lg px-8 py-7 bg-white/10 border-white text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 backdrop-blur-sm"
-              >
-                <Link href="#sistema">Conheça o Sistema</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section id="problema" className="py-24 bg-primary animate-on-scroll">
+      {/* About Section */}
+      <section id="conheca" className="py-24 bg-primary animate-on-scroll">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-foreground text-balance">
-                Cansado da falta de acessibilidade?
+                Há quase 10 anos transformando mobilidade em autonomia
               </h2>
               <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8">
-                Sabemos como é frustrante depender de terceiros ou enfrentar transportes inadequados e inseguros. A
-                mobilidade não deveria ser um privilégio, mas um direito fundamental. É por isso que criamos o Sistema
-                Mobilicare®: para garantir sua autonomia com segurança, pontualidade e respeito absoluto.
+                A mobilidade não deveria ser um privilégio, mas um direito fundamental. É por isso que criamos o Sistema
+                Mobilycare®: para garantir sua autonomia com segurança, pontualidade e respeito absoluto.
               </p>
             </div>
 
@@ -179,7 +167,7 @@ export default function Home() {
                 <div className="text-primary-foreground/90">Viagens Realizadas</div>
               </div>
               <div className="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+                <div className="text-3xl font-bold text-accent mb-2">Todos os dias!</div>
                 <div className="text-primary-foreground/90">Disponibilidade</div>
               </div>
             </div>
@@ -194,7 +182,7 @@ export default function Home() {
             <div className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4 animate-bounce-subtle">
               Sistema Exclusivo
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Sistema Mobilicare®</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Sistema Mobilycare®</h2>
             <p className="text-xl text-muted-foreground">Excelência e inovação em cada detalhe</p>
           </div>
 
@@ -282,7 +270,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Nossos Serviços</h2>
             <p className="text-xl text-muted-foreground">
-              Mobilidade para todas as suas necessidades em Campinas e região
+              Mobilidade para todas as suas necessidades
             </p>
           </div>
 
@@ -360,7 +348,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4">
-              Por Que Escolher a Mobilicare
+              Por Que Escolher a Mobilycare
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Nossos Diferenciais</h2>
             <p className="text-xl text-muted-foreground">Tecnologia, segurança e humanização em cada viagem</p>
@@ -384,7 +372,7 @@ export default function Home() {
             <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
               <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
               <h4 className="font-bold text-lg mb-2">Cobertura Regional</h4>
-              <p className="text-sm text-muted-foreground">Atendemos toda Campinas e região metropolitana</p>
+              <p className="text-sm text-muted-foreground">Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré). Regiões distantes também (aeroporto, viagens)</p>
             </Card>
 
             <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
@@ -398,73 +386,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ecosystem/Authority Section */}
-      <section id="conteudo" className="py-24 bg-gradient-to-b from-background to-muted/20 animate-on-scroll">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-6">
-                  Mobilicare Edu
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Autonomia em Movimento</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Baixe nosso guia gratuito completo sobre mobilidade acessível. Conheça seus direitos garantidos por
-                  lei, dicas práticas de segurança, tecnologias assistivas disponíveis no mercado e como escolher o
-                  melhor serviço de transporte para suas necessidades específicas.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Direitos do cadeirante no transporte público e privado
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Checklist de segurança para escolher transporte adaptado
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Tecnologias e adaptações veiculares mais modernas</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Dicas de rotina para manter sua autonomia</span>
-                  </li>
-                </ul>
-                <Button
-                  size="lg"
-                  asChild
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-300 shadow-lg"
-                >
-                  <Link
-                    href="https://wa.me/5519999999999?text=Quero%20o%20Guia%20Gratuito%20Autonomia%20em%20Movimento"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BookOpen className="w-5 h-5 mr-2" />
-                    Baixe o Guia Gratuito
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="relative group">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl group-hover:shadow-accent/30 transition-all duration-500 group-hover:scale-105">
-                  <img
-                    src="/ebook-cover-autonomia-em-movimento-mobility-guide-.jpg"
-                    alt="Ebook Autonomia em Movimento - Guia Completo de Mobilidade Acessível"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Testimonials Section */}
       <section className="py-24 bg-muted/30 animate-on-scroll">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
@@ -508,7 +430,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                "Voltei a ter vida social graças à Mobilicare. Agora vou ao cinema, restaurantes e visito amigos com
+                "Voltei a ter vida social graças à Mobilycare. Agora vou ao cinema, restaurantes e visito amigos com
                 total segurança."
               </p>
               <div className="font-semibold">Ana Paula</div>
@@ -526,19 +448,19 @@ export default function Home() {
               <div className="flex items-center gap-3 mb-4">
                 <Image
                   src="/logo-mobilicare.png"
-                  alt="Mobilicare Logo"
+                  alt="Mobilycare Logo"
                   width={40}
                   height={40}
                   className="w-10 h-10 brightness-0 invert"
                 />
-                <div className="text-3xl font-bold">Mobilicare</div>
+                <div className="text-3xl font-bold">Mobilycare</div>
               </div>
               <p className="text-primary-foreground/80 leading-relaxed mb-6">
                 Transporte acessível com excelência, segurança e cuidado humano. Sua autonomia é nossa missão, seu
                 bem-estar é nossa prioridade.
               </p>
               <Button asChild className="bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300">
-                <Link href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/5519997905115" target="_blank" rel="noopener noreferrer">
                   Agendar Viagem
                 </Link>
               </Button>
@@ -547,11 +469,11 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-lg mb-4">Contato</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li>Campinas e região, SP</li>
-                <li>(19) 99999-9999</li>
-                <li>contato@mobilicare.com.br</li>
+                <li>Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré)</li>
+                <li>(19) 99790-5115</li>
+                <li>suporte@mobilycare.com</li>
                 <li className="pt-2">
-                  <span className="text-xs text-primary-foreground/60">Horário de atendimento: 24/7</span>
+                  <span className="text-xs text-primary-foreground/60">Horário de atendimento: Disponível Todos os dias!</span>
                 </li>
               </ul>
             </div>
@@ -560,13 +482,13 @@ export default function Home() {
               <h4 className="font-bold text-lg mb-4">Links Rápidos</h4>
               <ul className="space-y-2 text-primary-foreground/80">
                 <li>
-                  <Link href="#problema" className="hover:text-accent transition-colors">
-                    O Problema
+                  <Link href="#conheca" className="hover:text-accent transition-colors">
+                    Conheça
                   </Link>
                 </li>
                 <li>
                   <Link href="#sistema" className="hover:text-accent transition-colors">
-                    Sistema Mobilicare®
+                    Sistema Mobilycare®
                   </Link>
                 </li>
                 <li>
@@ -579,17 +501,12 @@ export default function Home() {
                     Diferenciais
                   </Link>
                 </li>
-                <li>
-                  <Link href="#conteudo" className="hover:text-accent transition-colors">
-                    Conteúdo Educativo
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60 text-sm">
-            <p>&copy; {new Date().getFullYear()} Mobilicare. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Mobilycare. Todos os direitos reservados.</p>
             <div className="flex justify-center gap-6 mt-4">
               <Link href="#" className="hover:text-accent transition-colors">
                 Política de Privacidade
@@ -607,7 +524,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Button */}
       <Link
-        href="https://wa.me/5519999999999"
+        href="https://wa.me/5519997905115"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform animate-bounce-subtle hover:shadow-[#25D366]/50"
