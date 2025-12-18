@@ -12,8 +12,6 @@ import {
   BookOpen,
   MapPin,
   Users,
-  Award,
-  Star,
   CheckCircle2,
 } from "lucide-react"
 import Link from "next/link"
@@ -378,21 +376,7 @@ export default function Home() {
             <p className="text-xl text-muted-foreground">Tecnologia, segurança e humanização em cada viagem</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <Award className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h4 className="font-bold text-lg mb-2">Certificações</h4>
-              <p className="text-sm text-muted-foreground">
-                Certificados INMETRO e alvará de funcionamento regularizado
-              </p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <Star className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h4 className="font-bold text-lg mb-2">Avaliação 5 Estrelas</h4>
-              <p className="text-sm text-muted-foreground">Média de 4.9/5.0 nas avaliações de nossos clientes</p>
-            </Card>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
               <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
               <h4 className="font-bold text-lg mb-2">Cobertura Regional</h4>
