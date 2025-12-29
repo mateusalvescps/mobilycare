@@ -15,15 +15,39 @@ import {
   CheckCircle2,
 } from "lucide-react"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import QRCode from "react-qr-code"
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     setIsVisible(true)
+
+    // Forçar play do vídeo em mobile
+    const playVideo = async () => {
+      if (videoRef.current) {
+        try {
+          await videoRef.current.play()
+        } catch (error) {
+          console.log("Autoplay bloqueado, tentando novamente...")
+          // Tentar novamente após interação do usuário
+          document.addEventListener('touchstart', async () => {
+            if (videoRef.current) {
+              try {
+                await videoRef.current.play()
+              } catch (e) {
+                console.log("Não foi possível reproduzir o vídeo")
+              }
+            }
+          }, { once: true })
+        }
+      }
+    }
+
+    playVideo()
 
     const handleScroll = () => {
       const elements = document.querySelectorAll(".animate-on-scroll")
@@ -92,10 +116,14 @@ export default function Home() {
       >
         {/* Vídeo de fundo */}
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
+          webkit-playsinline="true"
+          x-webkit-airplay="allow"
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
           <source src="/video_background_inicio.mp4" type="video/mp4" />
