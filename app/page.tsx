@@ -467,7 +467,6 @@ export default function Home() {
               <ul className="space-y-2 text-primary-foreground/80">
                 <li>Campinas e Região (Valinhos, Vinhedo, Jundiaí, Paulínia, Hortolândia, Sumaré)</li>
                 <li>(19) 99790-5115</li>
-                <li>suporte@mobilycare.com</li>
                 <li className="pt-2">
                   <span className="text-xs text-primary-foreground/60">Horário de atendimento: Disponível Todos os dias!</span>
                 </li>
@@ -483,13 +482,8 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#sistema" className="hover:text-accent transition-colors">
-                    Sistema Mobilycare®
-                  </Link>
-                </li>
-                <li>
                   <Link href="#servicos" className="hover:text-accent transition-colors">
-                    Nossos Serviços
+                    Serviços
                   </Link>
                 </li>
                 <li>
