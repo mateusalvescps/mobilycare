@@ -147,7 +147,7 @@ export default function Home() {
             >
               <CheckCircle2 className="w-5 h-5 text-[#25D366]" />
               <span className="text-white/90">
-                Veículos adaptados certificados | Motoristas treinados | Disponível Todos os dias!
+                Atendimento em Campinas e Região | Motoristas treinados | Disponível Todos os dias!
               </span>
             </div>
             <div
